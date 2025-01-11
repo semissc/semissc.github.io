@@ -20,12 +20,12 @@
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="semantic, scene, completion, aaai, monocular, vision-based">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>VFG-SSC: Semi-supervised 3D Semantic Scene Completion with 2D Vision Foundation Model Guidance</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,20 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <!--MathJax-->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
 </head>
 <body>
 
@@ -52,28 +66,37 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">VFG-SSC: Semi-supervised 3D Semantic Scene Completion with 2D Vision Foundation Model Guidance</h1>
+            <h3 class="title has-text-centered">The 39th Annual AAAI Conference on Artificial Intelligence</h3>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://haiphamcse.github.io" target="_blank">Duc-Hai Pham</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&hl=en" target="_blank">Duc-Dung Nguyen</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=sGPFOAYAAAAJ&hl=en" target="_blank">Anh Pham</a><sup>2</sup>,</span>
+                <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tuan Ho</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://phongnhhn.info" target="_blank">Phong Nguyen</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://khoinguyen.org" target="_blank">Khoi Nguyen</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://rangnguyen.github.io" target="_blank">Rang Nguyen</a><sup>1</sup></span>
+  
+                </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"> <sup>1</sup> VinAI Research, Vietnam <sup>2</sup> AITech Lab., Ho Chi Minh City University of Technology, VNU-HCM, Vietnam </span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2408.11559" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,17 +105,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -100,13 +112,13 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (Coming Soon)</span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2408.11559" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -129,11 +141,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/images/semissc_after.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Vision-based 3D semantic scene completion is a crucial 3D scene understanding task. Can we train these models with limited 3D supervision?
       </h2>
     </div>
   </div>
@@ -148,8 +160,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Accurate prediction of 3D semantic occupancy from 2D visual images is vital in enabling autonomous agents to comprehend their surroundings for planning and navigation. State-of-the-art methods typically employ fully supervised approaches, necessitating a huge labeled dataset acquired through expensive LiDAR sensors and meticulous voxel-wise labeling by human annotators. The resource-intensive nature of this annotating process significantly hampers the application and scalability of these methods. We introduce a novel semi-supervised framework to alleviate the dependency on densely annotated data. Our approach leverages 2D foundation models to generate essential 3D scene geometric and semantic cues, facilitating a more efficient training process. Our framework exhibits notable properties: (1) Generalizability, applicable to various 3D semantic scene completion approaches, including 2D-3D lifting and 3D-2D transformer methods. (2) Effectiveness, as demonstrated through experiments on SemanticKITTI and NYUv2, wherein our method achieves up to 85% of the fully-supervised performance using only 10% labeled data. This approach not only reduces the cost and labor associated with data annotation but also demonstrates the potential for broader adoption in camera-based systems for 3D semantic occupancy prediction.          </p>
         </div>
       </div>
     </div>
@@ -158,109 +169,76 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">How it works</h2>
+        <div class="content has-text-justified">
+          <h3 class="title has-text-centered">
+            Semi-supervised Semantic Scene Completion (Semi-SSC) Formulation
+          </h3>
 
+          <p>
+            Given a sequence $\mathbf{Q}_t = \{I_{t-k}, I_{t-k+1}\ldots, I_{t-1}, I_t \}$ of $k$ consecutive frames, the SSC model $f_\theta$ generates a semantic occupancy grid which is defined in the coordinate system of the ego vehicle at the timestamp $t$. Each voxel of the grid is categorized as either empty or occupied by a specific semantic class. The grid can be obtained as follows: 
+            $\mathbf{\hat{Y}}_t = f_\theta(\mathbf{Q_t})$ where $\mathbf{\hat{Y}}_t \in \mathbb{R}^{H \times W \times Z \times (C+1)}$. $H$, $W$, and $Z$ denote the voxel grid's height, width,
+            and depth, and $C$ is the number of the semantic classes. In a semi-supervised setting (\Approach), the dataset contains two non-overlapping subsets:
+            <ul>
+              <li>Labeled data $\mathcal{D}^L=\{(\mathbf{Q}_t, \mathbf{Y}_t)\}_{t=1}^L$ where each image $I_t$ has a corresponding 3D occupancy ground-truth $\mathbf{Y}_t$.</li>
+              <li>Unlabeled data $\mathcal{D}^U = \{\mathbf{Q}_t\}_{t=1}^U$, which only contains images with \textbf{no LiDAR} and the amount of the unlabeled data is significantly larger than labeled data, i.e, $U \gg L$.</li>
+            </ul>
+              
+          </p>
 
+          <h3 class="title has-text-centered">
+            VFG-SSC pipeline
+          </h3>
+          <p>
+            A common strategy for tackling the semi-supervised problem is Self-Training. This involves first training a supervised model $f_\theta$ on labeled data $\mathcal{D}^L$ and then generating pseudo-labels for the unlabeled dataset $\mathcal{D}^U$. After that, the model $f_\theta$ is retrained using both the labeled and pseudo-labeled data.
+            Based on this Self-Training approach, our key contribution is to enhance the quality of the pseudo-label by incorporating 3D priors extracted from 2D vision foundation models. We now outline our three-step process in detail.
+          </p>
+          <img id="method_train" width="100%" src="./static/images/framework.png" alt="VFG-SSC Framework"/>
 
+          <h3 class="title has-text-centered">
+            Comparison with other methods
+          </h3>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+          <p>
+            Quantitative comparison of <span class="methodname">VFG-SSC</span> with SOTA metric depth estimators
+            on several zero-shot benchmarks. 
+            Our VFG-SSC significantly outperforms baseline methods. Remarkably, our approach achieves comparable results to fully supervised counterparts, with just a 15% performance gap using 10% labeled data. 
+          </p>
+
+          <img id="comparison" width="100%" src="./static/images/semkitti.png" alt="Comparison with other methods"/>
           
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <p>
+            For NYUv2, we consistently outperform other methods with both 5\% and 10\% of training data, underscoring the superiority of our approach over strong baselines. These results indicate that our VFG-SSC is generalizable to different architectures, can be applied to various labeled settings, and applies to both outdoor and indoor scenarios.
+          </p>
+          <img id="comparison" width="100%" src="./static/images/nyu.png" alt="Comparison with other methods"/>
+
+          <p>
+            Moreover, on the SemanticKITTI hidden test set, our method compares favorably with some fully supervised methods like MonoScene, despite utilizing only 10% labeled occupancy annotation. This emphasizes the effectiveness of our 3D clues and enhancement module, which is effective in generating high-quality pseudo-labels for training any SSC backbones. 
+          </p>
+
+          <img id="comparison" width="100%" src="./static/images/semkitti_test.png" alt="Comparison with other methods"/>
+
+          <!-- <p class="subtitle mt-5">
+            Refer to the pdf paper linked above for more details on qualitative, quantitative, and ablation studies.
+          </p> -->
         </div>
+
       </div>
     </div>
+    <!--/ Method. -->
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
 
 
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +248,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +256,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{pham2025semisupervised3dsemanticscene,
+        title={Semi-supervised 3D Semantic Scene Completion with 2D Vision Foundation Model Guidance}, 
+        author={Duc-Hai Pham and Duc-Dung Nguyen and Anh Pham and Tuan Ho and Phong Nguyen and Khoi Nguyen and Rang Nguyen},
+        year={2025},
+        eprint={2408.11559},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2408.11559}, 
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
